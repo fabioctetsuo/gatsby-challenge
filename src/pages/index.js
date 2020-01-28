@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby";
 import { graphql } from 'gatsby';
 import Layout from "../components/Layout"
 import PostItem from '../components/PostItem';
@@ -10,7 +11,9 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       {posts.map(({ node }) => (
-        <PostItem item={node.frontmatter} />
+        <Link to={node.fields.slug}>
+          <PostItem item={node.frontmatter} />
+        </Link>
       ))}
     </Layout>
   );
@@ -26,6 +29,9 @@ export const query = graphql`
             date(fromNow: true, locale: "en")
             description
             category
+          }
+          fields {
+            slug
           }
         }
       }

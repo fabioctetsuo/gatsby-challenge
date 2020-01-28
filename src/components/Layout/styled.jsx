@@ -9,8 +9,13 @@ export const Container = styled.div`
 `;
 
 export const ContentWrapper = styled.section`
-  width: 50%;
+  width: 100%;
   height: 400px;
   margin: 64px 0;
   align-self: center;
+  padding: 0 16px;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
 `;
