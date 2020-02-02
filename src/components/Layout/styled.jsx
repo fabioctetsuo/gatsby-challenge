@@ -13,9 +13,4 @@ export const ContentWrapper = styled.section`
   height: 400px;
   margin: 64px 0;
   align-self: center;
-  padding: 0 16px;
-
-  @media (min-width: 768px) {
-    width: 50%;
-  }
 `;

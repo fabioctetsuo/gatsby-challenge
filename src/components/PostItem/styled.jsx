@@ -4,20 +4,19 @@ export const Container = styled.section`
   width: 100%;
   min-height: 200px;
   border-radius: 16px;
-  background: #28384a;
-  padding: 24px;
-  box-shadow: 0px 0px 16px -1px rgba(0,0,0,0.52);
+  background: #ffffff;
   margin: 32px 0;
-  color: #f0f0f0;
+  color: #010101;
   display: flex;
   flex-direction: column;
 
-  -webkit-box-shadow: 0px 0px 16px -1px rgba(0,0,0,0.52);
-  -moz-box-shadow: 0px 0px 16px -1px rgba(0,0,0,0.52);
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(214,214,214,0.18);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(214,214,214,0.18);
+  box-shadow: 0px 0px 12px 1px rgba(214,214,214,0.18);
 `;
 
 export const Title = styled.h3`
-  font-size: 24px;
+  font-size: 20px;
   margin: 0 0 24px;
 `;
 
@@ -33,4 +32,14 @@ export const Category = styled.p`
 export const DateTime = styled.p`
   font-size: 12px;
   margin: 24px 0 0;
+`;
+
+export const InfoContainer = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  align-self: stretch;
+  flex-wrap: wrap;
 `;
