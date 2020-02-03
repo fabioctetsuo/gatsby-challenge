@@ -15,7 +15,7 @@ const Header = () => {
   const { title } = data.site.siteMetadata;
   return (
     <S.Container>
-      <h1>{title}</h1>
+      {title}
     </S.Container>
   );
 };
