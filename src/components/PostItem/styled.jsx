@@ -43,3 +43,8 @@ export const InfoContainer = styled.div`
   align-self: stretch;
   flex-wrap: wrap;
 `;
+
+export const ImageWrapper = styled.div`
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+`;

@@ -36,6 +36,13 @@ export const query = graphql`
             date(fromNow: true, locale: "en")
             description
             category
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 500) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           fields {
             slug
